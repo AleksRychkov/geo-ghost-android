@@ -1,0 +1,18 @@
+<resources>
+    <string name="permission_screen_deny">Deny</string>
+    <string name="permission_screen_enable">Enable</string>
+
+
+    <string name="location_screen_title">Access Your Location</string>
+    <string name="location_screen_subtitle">For easy access to your current location, enable location services</string>
+    <string name="location_navigate_to_permissions">Navigate to permissions</string>
+
+    <string name="notification_screen_title">Allow Show Notification</string>
+    <string name="notification_screen_subtitle">To get current status ghost location status, enable notifications</string>
+    <string name="notification_navigate_to_notifications">Navigate to notifications</string>
+
+    <string name="location_mock_screen_title">Enable location mock</string>
+    <string name="location_mock_screen_subtitle">Open developer options -> Select mock location app -> geo-ghost-android</string>
+    <string name="location_mock_screen_cancel">Cancel</string>
+    <string name="location_mock_screen_open_developer_options">Open developer options</string>
+</resources>

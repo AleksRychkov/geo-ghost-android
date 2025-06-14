@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_screen_nav_bar_item_search_title">Search city</string>
+    <string name="menu_screen_nav_bar_item_bookmarks_title">Bookmarks</string>
+</resources>

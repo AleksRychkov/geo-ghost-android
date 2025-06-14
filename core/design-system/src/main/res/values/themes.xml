@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.GeoGhost" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/md_theme_background</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+</resources>

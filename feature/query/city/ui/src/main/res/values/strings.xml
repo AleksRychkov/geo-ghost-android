@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="query_city_screen_search_hint">Type city name</string>
+    <string name="query_city_screen_search_empty">Found nothing. Try to change query</string>
+    <string name="query_city_screen_search_in_progress">Thinking really hard. Please wait…</string>
+    <string name="query_city_screen_search_no_internet_error">Check internet connection and</string>
+    <string name="query_city_screen_search_general_error">Something went wrong. Wait and</string>
+    <string name="query_city_screen_search_retry">TRY AGAIN</string>
+</resources>

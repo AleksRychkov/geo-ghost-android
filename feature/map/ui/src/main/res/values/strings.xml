@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="map_screen_scroll_to_current_location">Scroll to current location</string>
+    <string name="map_screen_enable_location_permission">Enable location permission</string>
+    <string name="map_screen_open_menu">Open menu</string>
+    <string name="map_screen_start_ghost_location">Start</string>
+    <string name="map_screen_stop_ghost_location">Stop</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bookmark_screen_add_bookmark">Bookmark</string>
+    <string name="bookmark_screen_add_bookmark_success">Bookmark has been successfully saved</string>
+    <string name="bookmark_screen_add_bookmark_failure_already_exists">Bookmark with such name already exists</string>
+    <string name="bookmark_screen_add_bookmark_failure">Oops. Failed to create bookmark</string>
+    <string name="bookmark_screen_add_bookmark_empty_name">Type name</string>
+    <string name="bookmark_screen_remove_bookmark">Remove from bookmarks</string>
+
+    <string name="bookmark_screen_select_query_hint">Type bookmark name</string>
+    <string name="bookmark_screen_select_query_empty">Found nothing. Try to change name</string>
+    <string name="bookmark_screen_select_empty">Nothing to show…</string>
+</resources>
