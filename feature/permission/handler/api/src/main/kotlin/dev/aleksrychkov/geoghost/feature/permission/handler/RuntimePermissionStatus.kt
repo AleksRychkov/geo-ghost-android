@@ -10,4 +10,5 @@ interface RuntimePermissionStatus {
     }
 
     suspend fun getStatus(permission: String): RuntimePermissionResult
+    fun isGranted(permission: String): Boolean
 }

@@ -1,10 +1,12 @@
 package dev.aleksrychkov.geoghost.feature.locationmanager
 
+import android.Manifest
 import dev.aleksrychkov.geoghost.core.model.LatLng
 import dev.aleksrychkov.geoghost.feature.locationmanager.data.LocationStorage
 import dev.aleksrychkov.geoghost.feature.locationmanager.source.LocationSource
 import dev.aleksrychkov.geoghost.feature.locationmanager.source.LocationSourceCallback
 import dev.aleksrychkov.geoghost.feature.locationmanager.source.LocationSourceFactory
+import dev.aleksrychkov.geoghost.feature.permission.handler.RuntimePermissionStatus
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -37,7 +39,7 @@ internal class LocationManagerImpl(
     private val sharedLocationFlow: SharedFlow<LatLng> = pollLocation()
         .shareIn(
             scope = scope,
-            started = SharingStarted.WhileSubscribed(stopTimeoutMillis = TIMEOUT_MILLIS),
+            started = SharingStarted.WhileSubscribed(stopTimeoutMillis = sharedLocationFlowTimeout()),
             replay = 1
         )
 
@@ -60,5 +62,12 @@ internal class LocationManagerImpl(
         scope.launch {
             locationStorage.setLastKnownLatLng(latLng)
         }
+    }
+
+    private fun sharedLocationFlowTimeout(): Long {
+        val isLocationPermissionGranted = RuntimePermissionStatus.instance
+            ?.isGranted(Manifest.permission.ACCESS_FINE_LOCATION)
+            ?: false
+        return if (isLocationPermissionGranted) TIMEOUT_MILLIS else 0L
     }
 }

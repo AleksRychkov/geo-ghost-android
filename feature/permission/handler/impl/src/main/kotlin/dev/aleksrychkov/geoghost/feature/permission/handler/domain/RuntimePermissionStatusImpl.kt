@@ -41,4 +41,7 @@ internal class RuntimePermissionStatusImpl(
             shouldRequestSettings = shouldRequestSettings,
         )
     }
+
+    override fun isGranted(permission: String): Boolean =
+        RuntimePermissionIsGranted.isGranted(componentActivity, permission)
 }
