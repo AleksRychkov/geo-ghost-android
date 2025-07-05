@@ -1,5 +1,7 @@
 package dev.aleksrychkov.geoghost.feature.query.city.ui
 
+import android.view.WindowManager
+import androidx.activity.compose.LocalActivity
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -79,6 +81,14 @@ private fun QueryCityScreenInner(
     }
     DisposableEffect(vm) {
         onDispose { vm.submitQuery("") }
+    }
+    val activity = LocalActivity.current
+    DisposableEffect(vm) {
+        val window = activity?.window
+        window?.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        onDispose {
+            window?.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        }
     }
 
     Content(
