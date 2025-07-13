@@ -1,0 +1,3 @@
+[submodule "android-build-logic"]
+	path = android-build-logic
+	url = git@github.com:AleksRychkov/android-build-logic.git

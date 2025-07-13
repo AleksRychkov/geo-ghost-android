@@ -3,7 +3,7 @@
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
-    includeBuild("build-logic")
+    includeBuild("android-build-logic")
     repositories {
         google {
             content {

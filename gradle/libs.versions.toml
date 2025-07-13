@@ -1,9 +1,13 @@
 [versions]
+# region android-build-logic
 compileSdk = "35"
 minSdk = "24"
 targetSdk = "35"
-applicationVersionName = "0.1"
-applicationVersionCode = "1"
+applicationId = "dev.aleksrychkov.geoghost"
+versionCode = "1"
+versionName = "0.1"
+# endregion
+
 
 
 agp = "8.10.0"

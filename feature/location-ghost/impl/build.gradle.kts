@@ -1,5 +1,5 @@
 plugins {
-    id("geoghost-android-library")
+    id("build-logic.android-library")
 }
 
 android {

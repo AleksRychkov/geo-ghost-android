@@ -1,5 +1,5 @@
 plugins {
-    id("geoghost-library")
+    id("build-logic.library")
     alias(libs.plugins.serialization)
 }
 
